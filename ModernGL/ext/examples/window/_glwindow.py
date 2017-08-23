@@ -35,7 +35,7 @@ class WindowData:
 
     @property
     def frame_time(self):
-        return self._wnd.frame_time
+        return self._wnd.time_delta
 
 
 def run_example(example, size, title):
