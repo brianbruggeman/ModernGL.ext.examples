@@ -26,6 +26,10 @@ class WindowData:
         return self._wnd.size
 
     @property
+    def ratio(self):
+        return self._wnd.ratio
+
+    @property
     def mouse(self):
         return self._wnd.mouse
 
