@@ -1,4 +1,5 @@
 import importlib
+import os
 import platform
 
 
@@ -11,6 +12,11 @@ def remove_duplicates(iterable):
 
 
 def run_example(example, *, size=None, title=None, backend=None, fallbacks=None):
+    if backend is None:
+        hint = os.environ.get('MODERNGL_EXAMPLE_WINDOW', '').strip().lower()
+        if hint:
+            backend = hint
+
     if backend is None:
         backend = 'GLWindow' if platform.system().lower() == 'windows' else 'PyQt5'
 
