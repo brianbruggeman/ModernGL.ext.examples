@@ -29,7 +29,7 @@ if 'NO_PILLOW' not in os.environ:
 
 setup(
     name='ModernGL.ext.examples',
-    version='1.0.0',
+    version='1.1.0',
     author='Szabolcs Dombi',
     author_email='cprogrammer1994@gmail.com',
     description='ModernGL extension',
