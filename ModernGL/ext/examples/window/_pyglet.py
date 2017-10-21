@@ -1,6 +1,9 @@
+# pylint: disable-all
+
 import time
 
 import pyglet
+
 
 class WindowData:
     def __init__(self):
@@ -49,7 +52,6 @@ def run_example(example, size, title):
     wnd_data._start_ticks = time.perf_counter()
     wnd_data._last_ticks = wnd_data._start_ticks
     key_down = [False] * 256
-    running = True
 
     app = example(wnd_data)
 

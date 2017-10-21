@@ -1,6 +1,8 @@
+# pylint: disable-all
+
 import time
 
-from PyQt5 import QtCore, QtOpenGL, QtWidgets
+from PyQt5 import QtOpenGL, QtWidgets
 
 
 class WindowData:

@@ -1,3 +1,5 @@
+# pylint: disable-all
+
 import importlib
 import os
 import platform
